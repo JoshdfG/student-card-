@@ -20,7 +20,7 @@ export default function Home() {
     const result = await contract.methods.getStudentDetails(studentName).call();
     const [name, ID, studentClass] = result;
 
-    const detailsElement = document.getElementById('studentDetails');
+    const detailsElement= document.getElementById('studentDetails');
     detailsElement.innerHTML = `<p><strong>Name:</strong> ${name}</p>
                                  <p><strong>ID:</strong> ${ID}</p>
                                  <p><strong>Class:</strong> ${studentClass}</p>`;
